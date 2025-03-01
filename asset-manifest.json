@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/deep_website/static/css/main.c974c1a5.css",
+    "main.js": "/deep_website/static/js/main.4337569e.js",
+    "static/media/flask.svg": "/deep_website/static/media/flask.02dccb6bcd7f981ae8c906116ded1f61.svg",
+    "static/media/linux.svg": "/deep_website/static/media/linux.cbfc89ac8f83c47421563b18ef15074f.svg",
+    "static/media/bash.svg": "/deep_website/static/media/bash.31469aae70b8e95103fe760027703efa.svg",
+    "static/media/mysql.svg": "/deep_website/static/media/mysql.acd761413821a53cff36b49e6fdef476.svg",
+    "static/media/python.svg": "/deep_website/static/media/python.7b3ee890a18106f475ace66a00df05c6.svg",
+    "index.html": "/deep_website/index.html",
+    "main.c974c1a5.css.map": "/deep_website/static/css/main.c974c1a5.css.map",
+    "main.4337569e.js.map": "/deep_website/static/js/main.4337569e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c974c1a5.css",
+    "static/js/main.4337569e.js"
+  ]
+}
