@@ -28,8 +28,8 @@ function App() {
             </div>
             <div className="lg:w-1/2 flex justify-center">
               <img 
-                src="/profile-picture.png" 
-                alt="Silhouette" 
+                src="./profile-picture.png" 
+                alt="Profile" 
                 className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full shadow-lg border-4 border-gray-700 hover:border-orange-500 transition duration-300" 
               />
             </div>
