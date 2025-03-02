@@ -11,73 +11,101 @@ import BashLogo from "./skills/bash.svg";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-10">
-      <div className="w-11/12 max-w-4xl bg-white/30 backdrop-blur-xl rounded-xl shadow-lg p-10 border border-gray-200">
-        <h1 className="text-3xl font-semibold font-serif text-gray-800 uppercase text-center mb-8 tracking-wide">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-800 py-10 px-6">
+
+      {/* 📚 Education Section */}
+      <div className="w-full max-w-4xl bg-white dark:bg-gray-900 shadow-lg rounded-xl p-8 border border-gray-200 dark:border-gray-700 mb-10">
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-white uppercase text-center mb-4">
+          Education
+        </h1>
+        <div className="text-center text-gray-700 dark:text-gray-300">
+          <p className="text-xl font-medium">🎓 Bachelor of Technology in Electronics & Computer Science</p>
+          <p className="text-lg">KIIT University, 2022 - 2026</p>
+        </div>
+      </div>
+
+      {/* 💻 Skills Section */}
+      <div className="w-full max-w-4xl bg-white dark:bg-gray-900 shadow-lg rounded-xl p-8 border border-gray-200 dark:border-gray-700 mb-10">
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-white uppercase text-center mb-6">
           My Tech Stack
         </h1>
 
-        {/* Skills Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
           
           {/* Machine Learning & Data Science */}
-          <div className="flex flex-col">
-            <h2 className="text-lg font-medium text-gray-700 mb-3 tracking-wide">
-              Machine Learning & Data Science
-            </h2>
-            <div className="flex flex-row space-x-4">
-              <img 
-                src="https://www.gstatic.com/devrel-devsite/prod/vdbb152dfd6ef5e309aa1d261d45f3fd443aed2691cbfba3f9f80f8a4012a0a8f/tensorflow/images/lockup.svg" 
-                alt="TensorFlow" 
-                className="w-14 h-14 hover:scale-110 transition-transform duration-300"
-              />
-              <img 
-                src="https://pytorch.org/assets/images/logo-icon.svg" 
-                alt="Pytorch" 
-                className="w-14 h-14 hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-          </div>
+          <SkillSection title="Machine Learning & Data Science">
+            <SkillIcon src="https://www.gstatic.com/devrel-devsite/prod/vdbb152dfd6ef5e309aa1d261d45f3fd443aed2691cbfba3f9f80f8a4012a0a8f/tensorflow/images/lockup.svg" alt="TensorFlow" />
+            <SkillIcon src="https://pytorch.org/assets/images/logo-icon.svg" alt="PyTorch" />
+          </SkillSection>
 
           {/* Web Development */}
-          <div className="flex flex-col">
-            <h2 className="text-lg font-medium text-gray-700 mb-3 tracking-wide">
-              Web Development
-            </h2>
-            <div className="flex flex-row space-x-4">
-              <img src={SQLLogo} alt="MySQL" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-              <img src={FlaskLogo} alt="Flask" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-            </div>
-          </div>
+          <SkillSection title="Web Development">
+            <SkillIcon src={SQLLogo} alt="MySQL" />
+            <SkillIcon src={FlaskLogo} alt="Flask" />
+          </SkillSection>
 
           {/* Programming Languages */}
-          <div className="flex flex-col">
-            <h2 className="text-lg font-medium text-gray-700 mb-3 tracking-wide">
-              Programming Languages
-            </h2>
-            <div className="flex flex-row space-x-4">
-              <img src={CLogo} alt="C" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-              <img src={CPPLogo} alt="C++" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-              <img src={PythonLogo} alt="Python" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-            </div>
-          </div>
+          <SkillSection title="Programming Languages">
+            <SkillIcon src={CLogo} alt="C" />
+            <SkillIcon src={CPPLogo} alt="C++" />
+            <SkillIcon src={PythonLogo} alt="Python" />
+          </SkillSection>
 
           {/* Other Skills */}
-          <div className="flex flex-col">
-            <h2 className="text-lg font-medium text-gray-700 mb-3 tracking-wide">
-              Other Skills
-            </h2>
-            <div className="flex flex-row space-x-4">
-              <img src={GitLogo} alt="Git" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-              <img src={GitLabLogo} alt="GitLab" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-              <img src={LinuxLogo} alt="Linux" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-              <img src={BashLogo} alt="Bash" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
-            </div>
-          </div>
+          <SkillSection title="Other Skills">
+            <SkillIcon src={GitLogo} alt="Git" />
+            <SkillIcon src={GitLabLogo} alt="GitLab" />
+            <SkillIcon src={LinuxLogo} alt="Linux" />
+            <SkillIcon src={BashLogo} alt="Bash" />
+          </SkillSection>
         </div>
       </div>
+
+      {/* 🏆 Certifications Section */}
+      <div className="w-full max-w-4xl bg-white dark:bg-gray-900 shadow-lg rounded-xl p-8 border border-gray-200 dark:border-gray-700">
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-white uppercase text-center mb-4">
+          Certifications
+        </h1>
+        <div className="flex flex-col space-y-3 text-center">
+          <CertificationLink url="https://coursera.org/certificate/example" title="📜 Machine Learning - Coursera" />
+          <CertificationLink url="https://udemy.com/certificate/example" title="📜 Python for Data Science - Udemy" />
+          <CertificationLink url="https://linkedin.com/certificate/example" title="📜 Deep Learning Specialization - LinkedIn" />
+        </div>
+      </div>
+
     </div>
   );
 };
+
+// 🛠 Reusable Skill Section
+const SkillSection = ({ title, children }) => (
+  <div className="flex flex-col items-center">
+    <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3 tracking-wide">
+      {title}
+    </h2>
+    <div className="flex flex-row space-x-4">{children}</div>
+  </div>
+);
+
+// 🔧 Reusable Skill Icon Component (Removed Invert)
+const SkillIcon = ({ src, alt }) => (
+  <img 
+    src={src} 
+    alt={alt} 
+    className="w-14 h-14 hover:scale-110 transition-transform duration-300"
+  />
+);
+
+// 🎓 Reusable Certification Link
+const CertificationLink = ({ url, title }) => (
+  <a 
+    href={url} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="text-lg font-medium text-blue-600 dark:text-blue-400 hover:underline transition duration-300"
+  >
+    {title}
+  </a>
+);
 
 export default Skills;

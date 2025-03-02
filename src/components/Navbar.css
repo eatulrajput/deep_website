@@ -1,11 +1,32 @@
 .nav-link {
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease-in-out;
-  display: inline-block;
+  position: relative;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
 }
 
-.nav-link:hover {
-  color: rgb(255, 135, 43);
-  transform: scale(1.1);
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-link.active {
+  font-weight: 400;
+  color: #ff9800; /* Active link color */
+}
+
+.nav-link.active::after {
+  width: 100%;
+  left: 0;
+  background-color: #ff9800;
 }
