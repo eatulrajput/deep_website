@@ -1,10 +1,12 @@
 import React from "react";
 
+
 const Navbar = ({ onButtonClick, toggleDarkMode, darkMode, menuOpen, setMenuOpen }) => {
   return (
     <nav className="p-4 bg-gray-800 dark:bg-gray-900 text-white flex justify-between items-center">
       {/* Logo / Title */}
-      <h1 className="text-xl font-bold">My Portfolio</h1>
+      <h1 className="text-xl font-bold">
+        Deep</h1>
 
       {/* Mobile Menu Button (Hamburger) */}
       <button 
