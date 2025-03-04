@@ -40,7 +40,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 py-10 px-4">
       <div className="w-full max-w-6xl bg-white/30 dark:bg-gray-800/30 backdrop-blur-lg rounded-xl shadow-lg p-10 border border-gray-200 dark:border-gray-700">
-        <h1 className="text-3xl font-semibold font-serif text-gray-800 dark:text-gray-200 uppercase text-center mb-8 tracking-wide">
+        <h1 className="text-3xl font-semibold  text-gray-800 dark:text-gray-200 uppercase text-center mb-8 tracking-wide">
           My Projects
         </h1>
 

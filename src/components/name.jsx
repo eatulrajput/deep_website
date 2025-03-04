@@ -12,7 +12,7 @@ const Name = () => {
       <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4">
         I am a passionate
       </p>
-      <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">data scientist</p>
+      <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">Data Scientist</p>
     </div>
   );
 };
